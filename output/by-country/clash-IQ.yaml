@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.20.30.10
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.76.194
   port: 443
   udp: true
-  type: vless
-  uuid: 91d28760-ecf1-450b-9170-d310111a0e6d
-  tls: true
-  servername: us9.69lover.my
+  type: trojan
+  password: Telegram_healer_config
+  sni: X8xus4X7UTZMDozv2.bZuH25LZINNeTwTOcXYIcx.WORkERs.deV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /api/v2/63e9687fa53e441c/stream
-    headers:
-      Host: us9.69lover.my
+    path: /tr/nDuppKYyUqsEcG0rcQEg5sghG0?ed
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
