@@ -54,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -66,6 +66,28 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+      "server": "176.124.220.173",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
       "server": "34.87.229.148",
       "server_port": 443,
       "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
@@ -92,7 +114,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ]
     },
     {
@@ -103,7 +126,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
