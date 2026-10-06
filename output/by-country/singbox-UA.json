@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "167.82.76.7",
+      "server": "167.82.76.27",
       "server_port": 443,
       "password": "mitivpn",
       "tls": {
@@ -23,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
-          "Host": "mitivpn---deb--s---mitivpn-4.global.ssl.fastly.net"
+          "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
         }
       }
     },
