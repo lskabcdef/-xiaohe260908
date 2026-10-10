@@ -13,12 +13,20 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.103.110.66
-  port: 18280
+  server: 87.228.92.114
+  port: 25481
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 65.109.188.155
   port: 443
@@ -34,21 +42,6 @@ proxies:
     path: /gropcdn
     headers:
       Host: marz.zovip2.ir
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 87.228.92.114
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +50,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +58,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
