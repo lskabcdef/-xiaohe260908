@@ -5,48 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.19.33.237
+  server: uk3-2.998998.best
   port: 443
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: jp3.yohototo.top
+  servername: server22.9966338.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /serhrdftshg
     headers:
-      Host: jp3.yohototo.top
+      Host: server22.9966338.xyz
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.19.33.237
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  servername: jp3.yohototo.top
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+    path: /pai50288
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.19.33.237
-  port: 443
+  server: eu02.123450908.xyz
+  port: 2052
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /rain1226
     headers:
-      Host: jp3.yohototo.top
+      Host: eu02.123450908.xyz
 proxy-groups:
 - name: PROXIES
   type: select
