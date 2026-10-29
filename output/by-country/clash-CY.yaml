@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaohe
-  server: 5.253.29.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
-  tls: true
-  servername: indi.qikbro.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: assets
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 5.253.30.99
   port: 40443
   udp: true
@@ -29,8 +16,8 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -45,6 +32,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaohe
+  server: 104.17.172.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: adeaebbe-5719-4c28-9b11-5df0d3331c88
+  tls: true
+  servername: Freedom32.Pages.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /assets?ed=2560
+    headers:
+      Host: freedom32.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
