@@ -4,22 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "164.37.224.51",
-      "server_port": 443,
-      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
+      "type": "trojan",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
+      "server": "sclass-b1.catcat321.com",
+      "server_port": 20051,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
         "enabled": true,
-        "server_name": "5d0319t.nl7.h1clayd.click",
+        "server_name": "hk.catxstar.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
-          "short_id": "361d0dd59c70516f"
+          "fingerprint": "chrome"
         }
       }
     },
@@ -28,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
