@@ -4,19 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "159.13.55.48",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
+      "type": "vless",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - xiaohe",
+      "server": "kozel.cc.cd",
+      "server_port": 443,
+      "uuid": "3b01a777-55e7-49f6-8637-d94ee69607c6",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-au2.whuiy.xyz",
+        "server_name": "kozel.cc.cd",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
+      "transport": {
+        "type": "ws",
+        "path": "/118.151.222.66=17317fp=chrome",
+        "headers": {
+          "Host": "kozel.cc.cd"
+        }
       }
     },
     {
@@ -24,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - xiaohe"
+        "🇮🇩 印尼 (Indonesia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
